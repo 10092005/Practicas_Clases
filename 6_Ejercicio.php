@@ -10,7 +10,7 @@
     <h1>Viaje a Las Islas Canarias</h1>
     <h3>Verifica si obtienes algun descuento</h3>
     <h5>OJO: Solo por hoy descuentos</h5>
-    <form method="GET" action="function.php">
+    <form method="GET" action="6_function.php">
         <label for="edad" class="edadLab">Edad: </label>
         <input type="number" name="edad" id="edad" required>
 
