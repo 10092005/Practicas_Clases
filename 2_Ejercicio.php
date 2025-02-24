@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio_2</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="2_style.css">
 </head>
 <body>
     <h1>Formulario</h1>
