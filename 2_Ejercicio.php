@@ -22,7 +22,7 @@
     </form>
 
     <?php
-    include 'funcion.php';
+    include '2_funcion.php';
 
     if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["nombre"]) && isset($_GET["apellido"]) && isset($_GET["direccion"])) {
         $nombre = trim($_GET["nombre"]);
