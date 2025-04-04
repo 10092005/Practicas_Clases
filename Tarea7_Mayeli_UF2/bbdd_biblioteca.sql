@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-04-2025 a las 10:49:20
+-- Tiempo de generación: 04-04-2025 a las 12:54:58
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -31,8 +31,24 @@ CREATE TABLE `libros` (
   `id` int(11) NOT NULL,
   `titulo` varchar(255) NOT NULL,
   `autor` varchar(55) NOT NULL,
-  `estado` tinyint(1) NOT NULL
+  `estado` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `libros`
+--
+
+INSERT INTO `libros` (`id`, `titulo`, `autor`, `estado`) VALUES
+(16, 'Principito', 'Antoine de Saint', 0),
+(17, 'La sombra del viento', 'Carlos Ruiz Zafón', 0),
+(18, 'Crónica de una muerte anunciada', ' Gabriel García Márquez', 0),
+(19, 'Orgullo y prejuicio', 'Jane Austen', 0),
+(20, 'El gran Gatsby', ' F. Scott Fitzgerald', 0),
+(21, 'Don Quijote de la Mancha', ' Miguel de Cervantes', 0),
+(22, 'La casa de los espíritus', 'Isabel Allende', 0),
+(23, 'El alquimista', 'Paulo Coelho', 0),
+(24, 'Los miserables', 'Victor Hugo', 0),
+(25, 'En busca del tiempo perdido', 'Marcel Proust', 0);
 
 -- --------------------------------------------------------
 
@@ -72,13 +88,13 @@ ALTER TABLE `prestamos`
 -- AUTO_INCREMENT de la tabla `libros`
 --
 ALTER TABLE `libros`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT de la tabla `prestamos`
 --
 ALTER TABLE `prestamos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
