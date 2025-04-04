@@ -4,9 +4,8 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $titulo = $_POST["titulo"];
         $autor = $_POST["autor"];
-        $estado = $_POST["estado"];
 
-        $sql = "INSERT INTO libros (titulo, autor, estado) VALUES ('$titulo', '$autor', '$estado')";
+        $sql = "INSERT INTO libros (titulo, autor, estado) VALUES ('$titulo', '$autor', 0)";
 
         if (mysqli_query($conexion, $sql)) {
             header("Location: index.php");
